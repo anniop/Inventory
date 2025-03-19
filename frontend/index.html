@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/png;base64,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" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stockify</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
